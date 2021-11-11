@@ -6,11 +6,8 @@ import 'firebase/compat/auth'
 import 'firebase/compat/firestore'
 import { setLoginUser, deleteLoginUser, fetchCartItem, fetchCoffee, fetchTopping } from '../actions/action';
 import type { NextPage } from 'next';
-import { createStore } from 'redux';
-import reducer from '../reducers';
 import Home from './home';
 
-const store = createStore(reducer)
 
 export type User = firebase.User
 export type Coffee = {
